@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Pets</h1>
+
+<div id="api_v1_pets">
+  <% @api_v1_pets.each do |api_v1_pet| %>
+    <%= render api_v1_pet %>
+    <p>
+      <%= link_to "Show this pet", api_v1_pet %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New pet", new_api_v1_pet_path %>

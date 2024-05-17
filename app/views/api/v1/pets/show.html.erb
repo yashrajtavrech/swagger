@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @api_v1_pet %>
+
+<div>
+  <%= link_to "Edit this pet", edit_api_v1_pet_path(@api_v1_pet) %> |
+  <%= link_to "Back to pets", api_v1_pets_path %>
+
+  <%= button_to "Destroy this pet", @api_v1_pet, method: :delete %>
+</div>
